@@ -1,0 +1,219 @@
+
+body {
+    background-color: rgb(13, 174, 179);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+    text-align: begin;
+    position: static;
+
+    
+}
+h1 {
+    color: aqua;
+    background-color: rgb(191, 133, 57);
+    padding: 50px;
+    border: 20px;
+    text-align: center;
+    position: static;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;   
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px grey;
+
+}
+.container {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    margin: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid rgb(9, 144, 103);    
+    position: static;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    margin: 20px 0;
+}
+footer {
+    background-color: rgb(191, 133, 57);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;   
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px grey;
+}
+button {
+    background-color: rgb(13, 174, 179);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px grey;
+}
+button:hover {
+    background-color: rgb(191, 133, 57);
+}
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}   
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: rgb(191, 133, 57);
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+input[type=text], input[type=password], input[type=email], textarea {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:black;
+    background-color: antiquewhite;
+}
+input[type=submit] {
+    width: 50%;
+    background-color: rgb(13, 174, 179);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: rgb(191, 133, 57);
+}
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+form {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    margin: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid rgb(9, 144, 103);    
+    position: static;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+nav {
+    background-color: rgb(191, 133, 57);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    margin: 20px 0;
+}
+article {
+    margin: 20px 0;
+}
+aside {
+    background-color: rgb(191, 133, 57);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8b1d1d;
+}
+hr {
+    border: 1px solid black;
+    margin: 20px 0;
+    color: #8b1d1d;
+}
+blockquote {
+    border-left: 5px solid rgb(191, 133, 57);
+    margin: 20px 0;
+    padding-left: 10px;
+    font-style: italic;
+    color: #681212;
+}
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 4px;
+}
+pre {
+    background-color: #8b1d1d;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
