@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><strong>Registration Form</strong> </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>User Registration</h1>
@@ -14,7 +15,7 @@
         <label for="firstname">First Name:</label> <input type="text"id="firstname"name="firstname:"required>
     </p>
     <p>
-        <label for="lastname">Last Name:</label> <input type="text" name="lastname" id="lastname:"required>
+        <label for="lastname">Last Name:</label> <input type="text" name="lastname" id="lastname:" required title="Enter your last name" placeholder="Last Name">
     </p>
     <p>
         <label for="dob">Date of birth:</label> <input type="date"id="dob"name="dob">
@@ -22,10 +23,11 @@
     <label for="age">Age:</label> <input type="number"id="age"name>
    <p> 
     <label for="gender">Gender:</label><br>
-     <input type="radio"id="gender-male"name="male"value="male"><label for="male">Male</label><br>
-     <input type="radio" id="gender-female"name="female"value="female"><label for="female">Female</label>
+     <input type="radio" id="gender-male" name="male" value="male" title="Select Male" placeholder="Male"><label for="male">Male</label><br>
+     <input type="radio" id="gender-female" name="female" value="female" title="Select Female" placeholder="Female"><label for="female">Female</label>
    </p>
-   <label for="profilephoto">Profile Photo:</label><input type="file"id="content">
+   <label for="profilephoto">Profile Photo:</label>
+   <input type="file" id="content" title="Upload your profile photo" placeholder="Choose a profile photo">
    </fieldset>
    <fieldset>
     <legend>Contact & Address</legend>
@@ -33,7 +35,8 @@
     <label for="emailaddress">Email Address:</label><input type="email"id="emailaddress">
     </p>
     <p>
-    <label for="phonenumber">Phone Number:</label><input type="number"id="number">
+    <label for="phonenumber">Phone Number:</label>
+    <input type="number" id="number" title="Enter your phone number" placeholder="Phone Number">
     </p>
     <p>
     <label for="personalwebsite">Personal Website</label><input type="url"id="personalwebsite"name="personalwebsite">
@@ -45,7 +48,7 @@
     <label for="city">City:</label><input type="text"id="city">
     </p>
     <p>
-        <label for="country">Country:</label> <select name="selectcountry" id="selectcountry"><option value="selectcountry">Select </option><br>
+        <label for="country">Country:</label> <select name="selectcountry" id="selectcountry" title="Select your country"><option value="selectcountry">Select </option><br>
         <option>Kenya</option>
         <option>Uganda</option>
         <option>Tanzania</option>
@@ -66,65 +69,109 @@
         <label for="favoritecolor">Favorite Color:</label><input type="color" name="red" id="favoritecolor">
     </p>
     <p>
-        <label for="experiencelevel[1-10]">Experience Level [1-10]:</label><input type="range" name="" id="">
+        <label for="experiencelevel[1-10]">Experience Level [1-10]:</label>
+        <input type="range" name="experiencelevel" id="experiencelevel" title="Select your experience level from 1 to 10" placeholder="Experience Level">
     </p>
     <p>
-        <label for="bm">Birth Month:</label><input type="month"id="bm"name="bm">
+        <label for="bm">Birth Month:</label>
+        <select id="bm" name="bm">
+            <option value="">Select Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
     </p>
     <p>
-        <label for="aw">Available Week:</label><input type="week"id="aw"name="aw">
+        <label for="aw-month">Available Month:</label>
+        <select id="aw-month" name="aw-month">
+            <option value="">Select Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <label for="aw-week">Week:</label>
+        <select id="aw-week" name="aw-week">
+            <option value="">Select Week</option>
+            <option value="1">Week 1</option>
+            <option value="2">Week 2</option>
+            <option value="3">Week 3</option>
+            <option value="4">Week 4</option>
+            <option value="5">Week 5</option>
+        </select>
     </p>
     <p>
         <label for="searchkeywords">Search keywords:</label><input type="search"id="searchkeywords"name="searchkeywords">
     </p>
     <p>
-        <label for="Interest">Interests[Select all that apply]:</label><br>
-        <input type="button"><label for="sports">Sports</label><br>
-      <input type="button"><label for="music">Music</label><br>
-     <input type="button"><label for="travel">Travel</label><br>
-     <input type="button"><label for="reading">Reading</label><br>
-     <input type="button"><label for="cooking">Cooking</label>
-    </option>
+      <label for="Interest">Interests [Select all that apply]:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports"><label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music"><label for="music">Music</label><br>
+        <input type="checkbox" id="travel" name="interests" value="travel"><label for="travel">Travel</label><br>
+        <input type="checkbox" id="reading" name="interests" value="reading"><label for="reading">Reading</label><br>
+        <input type="checkbox" id="cooking" name="interests" value="cooking"><label for="cooking">Cooking</label>
     </p> 
-    <label for="educationlevel">Education Level:</label><select name=" selecteducationleve" id="selecteducationleve"><option value="">select</option><br>
+    <label for="educationlevel">Education Level:</label>
+    <select name="selecteducationleve" id="selecteducationleve" title="Select your education level">
+        <option value="">select</option><br>
         <option>primary</option>
         <option>secondary</option>
         <option>university</option>
 
     </select>
     <p>
-        <label for="createpassword">Create Password:</label><input type="password"id="password"><br>
-        <label for="confirmpassword">Confirm Password:</label><input type="password"id="password">
+        <label for="createpassword">Create Password:</label>
+        <input type="password" id="createpassword" title="Create your password" placeholder="Create Password"><br>
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="confirmpassword" title="Confirm your password" placeholder="Confirm Password">
     </p>
    </fieldset>
    <fieldset>
     <legend>Feedback & Additional Information</legend>
     <p>
         <label for="tellusaboutyourself">Tell us about yourself:</label><br>
-        <textarea name="bio" id="bio"rows="6">Write a brief description about yourself...</textarea>
+        <textarea name="bio" id="bio-description" rows="6" title="Tell us about yourself" placeholder="Write a brief description about yourself...">Write a brief description about yourself...</textarea>
         </p>
       <p> <label for="suggestionsforimprovement">Suggestions For Improvement:</label><br>
-        <textarea name="bio" id="bio"rows="6">Any suggestions or feedback</textarea>
+        <textarea name="bio" id="bio-suggestions" rows="6" title="Provide suggestions or feedback" placeholder="Any suggestions or feedback">Any suggestions or feedback</textarea>
       </p>
-      <p>  <label for="registrationdate&time">Registration Date & Time:</label><input type="date"id="rdt">
+      <p>  <label for="registrationdate&time">Registration Date & Time:</label><input type="date" id="rdt" title="Select your registration date and time" placeholder="Registration Date & Time">
       </p>
-      <p>  <label for="howdidyouhearaboutus?">How did you hear about us?</label><select name="selectsource" id="selectsource"><option value="selectcountry">Select source</option><br>
+      <p>  <label for="howdidyouhearaboutus?">How did you hear about us?</label><select name="selectsource" id="selectsource" title="How did you hear about us?"><option value="selectcountry">Select source</option><br>
         <option>Friend</option>
         <option>Family</option>
         <option>Social media</option>
       </select>
     </p>
     <p>
-        <label for="uploadresume[optional]">Upload Resume(optional):</label><input type="file">
+        <label for="uploadresume[optional]">Upload Resume(optional):</label>
+        <input type="file" title="Upload your resume (optional)" placeholder="Choose a resume file">
     </p>
     <p>
-        <input type="button"> <label for="subscriptiontoournewsletter">Subscription to our newsletters</label>
+        <input type="button" value="Subscribe" title="Subscribe to our newsletters"> <label for="subscriptiontoournewsletter">Subscription to our newsletters</label>
     </p>
     <p>
-        <input type="button"> <label for="iagreetothetermsandcondition">I Agree To The Terms and Conditions</label>
+        <input type="button" value="Agree to Terms and Conditions" title="I Agree To The Terms and Conditions"> <label for="iagreetothetermsandcondition">I Agree To The Terms and Conditions</label>
     </p>
     <p>
-        <input type="button"> <label for="iagreetotheprivacypolicy">I Agree To The Privacy Policy</label>
+        <input type="button" value="Agree to Privacy Policy" title="I Agree To The Privacy Policy"> <label for="iagreetotheprivacypolicy">I Agree To The Privacy Policy</label>
     </p>
    </fieldset>
    <p>
